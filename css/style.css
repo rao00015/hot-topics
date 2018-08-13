@@ -1,0 +1,198 @@
+/*colors used - #00ff00, #43a286, #399077, #005c48, black, white,*/
+
+.wrapper {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+p {
+    font-family: 'verdana', sans-serif;
+}
+
+header.head {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.article {
+    margin-bottom: 45px;
+    border: 2px dotted lightgrey;
+    padding: 10px;
+}
+
+* {
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+
+
+#portfolio,
+.article img {
+    border-radius: 2px;
+}
+
+
+.section img {
+    height: 300px;
+    width: auto;
+    margin-right: 10px;
+}
+
+#portfolio img {
+    width: 300px;
+    height: auto;
+}
+
+#portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section figure {
+    float: left;
+}
+
+
+
+.button {
+    background-color: floralwhite;
+    /*    padding: 20px;*/
+    /*    margin-bottom: 10px;*/
+    border: 1px dashed black;
+}
+
+header img {
+    height: 70px;
+    width: 280px;
+    /*    float: left;*/
+    /*    margin-left: 200px;*/
+}
+
+footer {
+    margin-bottom: 20px;
+    clear: both;
+    margin-top: 20px;
+}
+
+
+footer a {
+    height: 50px;
+    width: auto;
+}
+
+footer img {
+    height: 30px;
+    width: 30px;
+}
+
+
+a {
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+section {
+    line-height: 1.5em;
+    font-size: 0.9em;
+    padding: 40px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+}
+
+
+#portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+wrapper {
+    min-width: 80rem;
+}
+
+.button {
+    display: inline-block;
+}
+
+.article img {
+    height: 300px;
+    width: auto;
+}
+
+
+
+@media screen and (max-width: 80rem) {
+
+    #portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .article img {
+        height: 180px;
+        width: auto
+    }
+    
+    header.head {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    header div.navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width: 30rem) {
+    header.head {
+        grid-template-columns: 1fr;
+}
+    
+    header div.navigation {
+        grid-template-columns: 1fr;
+    }
+
+
+    .showing {
+        max-height: 20em;
+    }
+
+
+    * {
+        font-size: 0.75rem;
+    }
+
+    .slideshow {
+        display: none;
+    }
+
+    #portfolio {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .article img {
+        height: 150px;
+        width: auto;
+        padding: 10px;
+    }
+}

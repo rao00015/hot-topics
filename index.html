@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Demo</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/normalise.css" rel="stylesheet">
+    <link href="css/unslider.css" rel="stylesheet">
+    <link href="css/unslider-dots.css" rel="stylesheet">
+    <!--    <script src="js/mordernizr-custom.js"></script>-->
+
+
+    <!-- Hosted Google Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+
+<div class="wrapper">
+
+    <body>
+
+        <header class="head">
+            <div id="logo">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+
+
+            <div class="navigation">
+                <!-- NOTE: This is totally unconventional but it's his tutorial... -->
+                <a href="./partials/home.html" class="button">
+                    Home
+                </a>
+
+
+                <a href="./partials/portfolio.html" class="button">
+                    Portfolio
+                </a>
+            </div>
+
+        </header>
+
+
+        <div class="section">
+
+        </div>
+
+
+
+        
+
+        <script>
+            jQuery(document).ready(function($) {
+                $('.slideshow').unslider({
+                    autoplay: true
+                });
+            });
+        </script>
+
+        <script src="js/index.js"></script>
+    </body>
+
+    <footer>
+        <a href="http://fb.com"><img src="images/fb.png"></a>
+        <a href="http://twitter.com"><img src="images/twitter.png"></a>
+        <a href="http://instagram.com"><img src="images/instagram.png"></a>
+    </footer>
+</div>
+
+</html>
